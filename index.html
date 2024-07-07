@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<link href="./styles.css" rel="stylesheet">
+<head>
+<title>Survey Form</title>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+
+<h1 id="title">
+Survey Form
+</h1>
+<p id="description">
+  We appreciate you taking the time to complete this survey!
+</p>
+
+<form id="survey-form">
+
+  <div class="form-items">
+  <label id="name-label"for="name">Name</label>
+  <input required id="name" placeholder="Enter your name" type="text"/>
+
+  <label id="email-label" for="email">Email</label>
+  <input required id="email" placeholder="Enter your email" type="email"/>
+
+  <label id="number-label" for="number">Age (Optional)</label>
+  <input id="number" type="number" placeholder="Age" min="13" max="120">
+  </div>
+
+  <div class="form-items">
+  <select id="dropdown">
+    <option disabled selected value>Select Favorite Chicken</option>
+    <option value="fried">Fried</option>
+    <option value="roasted">Oven Roasted</option>
+    <option value="grilled">Grilled</option>
+    <option value="preferNo">I don't like chicken</option>
+    <option value="other">Other option not listed</option>  
+  </select>
+  </div>
+
+<div class="form-items">
+  <p>Do you like to cook?</p>
+  
+  <label>
+    <input name="radio-cook" selected value="yes" type="radio"/>
+    Yes!
+  </label>
+
+  <label>
+  <input name="radio-cook" value="no" type="radio"/>
+  Not really...
+  </label>
+</div>
+
+<div class="form-items">
+  <p>What is your go-to type of takeout food?</p>
+
+  <label name="prefer"><input value="chinese" type="checkbox"/>
+  Chinese Food
+  </label>
+
+  <label name="prefer"><input value="indian" type="checkbox"/>
+  Indian food
+  </label>
+
+  <label name="prefer"><input value="pizza" type="checkbox"/>
+  Pizza
+  </label>
+
+  <label name="prefer"><input value="burgers" type="checkbox"/>
+  Burgers
+  </label>
+</div>
+
+<div class="form-items">
+<label for="best-dish">Tell us about the best food dish you've ever had and how it made you feel.</label>
+<textarea cols="45" rows="5" id="best-dish" placeholder="Tell us in here"></textarea>
+</div>
+<div class="form-tems">
+<input id="submit" type="submit"/>
+</div
+
+</form>
+
+</body>
+</html>
